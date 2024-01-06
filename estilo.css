@@ -1,0 +1,50 @@
+* { /* * manda a llamar a todos */
+	margin: 0;    /*margen*/
+	padding: 0;   /*relleno del alrededor*/
+	border: 0;    /*bordes*/
+	outline: 0; /*contorno*/
+	font-family: "Times New Roman", sans-serif; /*familia de letras*/
+	box-sizing: 0; /*contiene un cuadro*/
+	
+}
+.container {
+	width: 100%; /*ancho*/
+	min-height: 100vh; /*altura del area de un elemento*/
+	background-color: rgba(9, 13, 39, 0.826);
+	display: flex; /*diseno flexible*/
+	align-items: center;
+	justify-content: center;
+}
+.calculator {
+	padding: 20px;
+	border-radius: 10px; /*borde redondo*/
+}
+.calculator form input {
+	width: 80px;
+	height: 50px; /*altura de un elemento*/
+	border-radius: 10px;
+	margin: 10px;
+	font-size: 30px; /*tamano de fuente*/
+	background: transparent;
+	color: rgb(227, 31, 57);
+	box-shadow: -8px -8px 15px rgba(113, 10, 10, 0.1), 5px 5px 15px #00000033; 
+	/*sombras multiples e independientes*/
+}
+
+form .display {
+        display: flex;
+        justify-content: flex-end; /*distribuye espacio*/
+        margin: 10px 0;
+}
+
+form  .display input{
+        text-align: right; /*alineacion de un bloque*/
+        flex: 1;
+        font-size: 40px;
+        padding: 20px;
+}
+
+form input.equal {
+        width: 180px;
+}
+
